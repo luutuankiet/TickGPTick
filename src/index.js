@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '/root/dev/TickGPTick/src/.env' });
 const TickTickClient = require('./lib/TickTickClient')
 const {
   expandTasksIntoAtomicTasks,
