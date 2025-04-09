@@ -39,3 +39,18 @@ Your Tick Tick Username
 
 ## TICKPASSWORD
 Your Tick Tick Password
+
+
+## patch for auto load
+Since this is running on a Raspberry Pi according to the README, you might want to set it up to run automatically on startup or use a process manager like PM2:
+
+`npm install -g pm2`
+
+`pm2 start index.js --name "tickgptick"`
+
+`pm2 save`
+
+
+`pm2 startup`
+
+This would keep the application running persistently and restart it if it crashes or if the Raspberry Pi reboots.
